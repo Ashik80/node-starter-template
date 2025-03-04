@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%- include('partials/common/metatags') %>
+    <title>Node Starter Template<% if (title) { %> - <%= title %> <% } %></title>
+  </head>
+  <body class="dark:bg-gray-800">
+    <div>
+      <%- include('layouts/' + layout) %>
+    </div>
+  </body>
+</html>

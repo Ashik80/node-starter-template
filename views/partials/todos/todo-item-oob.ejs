@@ -1,0 +1,5 @@
+<%- include('todo-create-form', form) %>
+
+<div hx-swap-oob="beforeend:#todo-list">
+  <%- include('todo-item', { id: todo.id, title: todo.title, description: todo.description }) %>
+</div>
