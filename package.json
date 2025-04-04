@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "dev": "npm run build:tailwind && nodemon src/index.ts",
     "build:tailwind": "npx @tailwindcss/cli -i static/css/style.css -o static/css/output.css",
     "build:tailwind:dev": "npx @tailwindcss/cli -i static/css/style.css -o static/css/output.css --watch"
   },
